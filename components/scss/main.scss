@@ -11,16 +11,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @import "partials/variables";
 @import "partials/underscores"; // Base sytle sheet from underscores
-@import "partials/imports"; // Frameworks (bootstrap, font-awesome)
+@import "partials/bower"; // Concatenated styles from all bower installed components (jquery, bootstrap)
+@import "partials/imports"; // Frameworks (font-awesome, etc)
 @import "partials/typography";
-@import "partials/app"; // Other custom styles
+@import "partials/app"; // Developer custom styles
 @import "partials/header";
 @import "partials/homepage";
 @import "partials/sidebar";
 @import "partials/navigation";
 @import "partials/footer";
 
+// @import "partials/contact_form";
 // @import "partials/schedule";
 // @import "partials/pagination";
 // @import "partials/services-pages";
-// @import "partials/contact_form";

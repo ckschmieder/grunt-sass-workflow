@@ -1,6 +1,15 @@
 .DS_Store
+Icon
+
+css
 node_modules
 bower_components
 .tmp
 .sass-cache
+.sass-cache/*
+.sass-cache/**
+**.sass-cache/**
+.sass-cache/
+
 builds/**/images/*
+

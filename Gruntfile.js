@@ -1,6 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
 
+
+    bower_concat: {
+      all: {
+        dest: 'components/scripts/_bower.js',
+        cssDest: 'components/scss/partials/_bower.scss'
+      }
+    }, // bower_concat
+
     concat : {
       options: {
         separator: '\n\n//------------------------------------------\n',
@@ -12,17 +20,11 @@ module.exports = function(grunt) {
       }
     }, //concat
 
-    bower_concat: {
-      all: {
-        dest: 'components/scripts/_bower.js',
-        cssDest: 'components/sass/partials/_bower.scss'
-      }
-    },
-
     sass: {
       dist: {
         options: {
-          style: 'expanded'
+          style: 'expanded',
+          sourceMap: true
         },
         files : [{
           src: 'components/scss/main.scss',
@@ -31,7 +33,7 @@ module.exports = function(grunt) {
       },
       prod: {
         options: {
-          style: 'expanded'
+          style: 'compressed'
         },
         files : [{
           src: 'components/sass/style.scss',
