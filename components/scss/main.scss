@@ -1,0 +1,26 @@
+/*!
+Theme Name: rutgers_cres
+Theme URI: http://github.com/randjsc/rutgers_cres
+Author: Chris Schmieder
+Author URI: http://randjsc.com
+Description: An Underscores, SASS-based theme.
+Version: 0.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "partials/variables";
+@import "partials/underscores"; // Base sytle sheet from underscores
+@import "partials/imports"; // Frameworks (bootstrap, font-awesome)
+@import "partials/typography";
+@import "partials/app"; // Other custom styles
+@import "partials/header";
+@import "partials/homepage";
+@import "partials/sidebar";
+@import "partials/navigation";
+@import "partials/footer";
+
+// @import "partials/schedule";
+// @import "partials/pagination";
+// @import "partials/services-pages";
+// @import "partials/contact_form";

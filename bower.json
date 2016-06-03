@@ -1,0 +1,19 @@
+{
+  "name": "randj wordpress workflow",
+  "version": "1.0.0",
+  "description": "WordPress workflow with Grunt, SASS, and Underscores",
+  "authors": [
+    "Chris Schmieder"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}
