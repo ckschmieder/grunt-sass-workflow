@@ -2,12 +2,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
 
-    bower_concat: {
-      all: {
-        dest: 'components/scripts/_bower.js',
-        cssDest: 'components/scss/partials/_bower.scss'
-      }
-    }, // bower_concat
 
     concat : {
       options: {
@@ -56,7 +50,7 @@ module.exports = function(grunt) {
         files  : {
 
           "builds/development/js/script.min.js": [
-            "components/scripts/_bower.js",            
+            // "components/scripts/_bower.js",            
             "components/scripts/script.js"           
           ]
         }
@@ -99,9 +93,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-bower-concat');
+  // grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['bower_concat', 'concat', 'sass:dist', 'watch']);
+  grunt.registerTask('default', ['concat', 'uglify', 'sass:dist','autoprefixer', 'watch']);
 
 }; //wrapper function
